@@ -62,9 +62,9 @@ class Classifier():
 
     @classmethod
     def load(cls, model_path):         
-        rfclassifier = joblib.load(os.path.join(model_path, model_fname))
+        classifier = joblib.load(os.path.join(model_path, model_fname))
         # print("where the load function is getting the model from: "+ os.path.join(model_path, model_fname))        
-        return rfclassifier
+        return classifier
 
 
 def save_model(model, model_path):
