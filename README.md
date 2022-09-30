@@ -12,7 +12,7 @@ LightGBM Classifier Using Tf-IDF preprocessing for Text Classification - Base pr
 - docker
 - text classification
 
-This is a Text Classifier that uses a LightGBM Classifier through xgboost.
+This is a Text Classifier that uses a LightGBM Classifier.
 
 The data preprocessing step includes tokenizing the input text, applying a tf-idf vectorizer to the tokenized text, and applying Singular Value Decomposition (SVD) to find the optimal factors coming from the original matrix. In regards to processing the labels, a label encoder is used to turn the string representation of a class into a numerical representation.
 
