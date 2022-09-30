@@ -16,7 +16,7 @@ This is a Text Classifier that uses a LightGBM Classifier.
 
 The data preprocessing step includes tokenizing the input text, applying a tf-idf vectorizer to the tokenized text, and applying Singular Value Decomposition (SVD) to find the optimal factors coming from the original matrix. In regards to processing the labels, a label encoder is used to turn the string representation of a class into a numerical representation.
 
-Hyperparameter Tuning (HPT) is conducted by finding the optimal learning rate, loss reduction required to make a further partition on a leaf node of the tree, and depth of the tree.
+Hyperparameter Tuning (HPT) is conducted on LightGBM's 3 hyperparameters: boosting_type, num_leaves, and learning_rate.
 
 During the model development process, the algorithm was trained and evaluated on a variety of datasets such as email spam detection, customer churn, credit card fraud detection, cancer diagnosis, and titanic passanger survivor prediction.
 
