@@ -258,10 +258,11 @@ if __name__ == "__main__":
     
     num_hpt_trials = 10
     run_hpt_list = [False, True]
-    run_hpt_list = [True]
+    run_hpt_list = [False]
     
-    datasets = ["clickbait", "drug_reviews", "movie_reviews", "spam_text", "tweet_emotions"]
-    datasets = ["spam_text"]
+    datasets = ["clickbait", "drug_reviews", "ecommerce_categories", "fake_job_postings", "hate_speech", 
+                "movie_reviews", "musical_instruments", "newsgroups", "spam_text", "tweet_emotions"]
+    datasets = ["newsgroups"]
     
     for run_hpt in run_hpt_list:
         all_results = []
