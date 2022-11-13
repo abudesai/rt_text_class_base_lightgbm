@@ -94,7 +94,7 @@ def get_data_based_model_params(train_y, valid_y):
     num_classes = len(set(train_y).union(set(valid_y)))
     if num_classes == 2:
         params = {
-            "num_class": 1,
+            "num_class": 1,  # weird thing about lightgbm that it requires num_class = 1 for binary classification
             "objective": "binary",
             "metric": "binary_logloss"
         }
