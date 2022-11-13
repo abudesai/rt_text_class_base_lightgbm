@@ -94,13 +94,14 @@ def get_data_based_model_params(train_y, valid_y):
     num_classes = len(set(train_y).union(set(valid_y)))
     if num_classes == 2:
         params = {
+            "num_class": 1,
             "objective": "binary",
             "metric": "binary_logloss"
         }
     elif num_classes > 2:
         params = {
             "objective": "multiclass",
-            "num_classes": num_classes,
+            "num_class": num_classes,
             "metric": "multi_logloss"
         }
         
