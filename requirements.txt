@@ -1,4 +1,5 @@
 scikit-learn==1.0
+numpy==1.22
 feature-engine==1.2.0
 scikit-optimize==0.9.0
 flask==2.0.2

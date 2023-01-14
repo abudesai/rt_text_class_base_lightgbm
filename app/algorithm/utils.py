@@ -1,8 +1,6 @@
 
-from pydoc import doc
 import numpy as np, pandas as pd, random
 import sys, os
-import glob
 import json
 
 
@@ -48,6 +46,8 @@ def get_json_file(file_path, file_type):
 
 def get_hyperparameters(hyper_param_path): 
     hyperparameters_path = os.path.join(hyper_param_path, 'hyperparameters.json')
+    if not os.path.exists(hyperparameters_path): 
+        return {}  # if not hp file given, then return empty dictionary for hyperparameters and let the default hyperparameters work 
     return get_json_file(hyperparameters_path, "hyperparameters")
 
 
